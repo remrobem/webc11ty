@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ministries</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/ministries/">Ministries</a></li>
+      </ul>
+    </nav>
+    <h1>Our Ministries</h1>
+  </header>
+
+  <section>
+    {% for ministry in collections.ministries %}
+    <div>
+      <h2>{{ ministry.data.name }}</h2>
+      <img src="{{ ministry.data.image }}" alt="{{ ministry.data.name }}">
+      <p>{{ ministry.data.description }}</p>
+      <p>Contact: {{ ministry.data.contact_name }} (<a href="mailto:{{ ministry.data.contact_email }}">{{ ministry.data.contact_email }}</a>)</p>
+    </div>
+    {% endfor %}
+  </section>
+</body>
+</html>
