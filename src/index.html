@@ -17,31 +17,15 @@
     </header>
 
     <section>
-
-    {% include 'about.html' %}
-
-    <section>
-      <h2>Next Service</h2>
-      <div>
-        <h3>Name: {{ next-service.name }}</h3>
-        <p>Date: {{ next_service.date }}</p>
-        <p>Start Time: {{ next_service.start_time }}</p>
-        <p><a href="{{ next_service.music_link }}">Music</a></p>
-        <p><a href="{{ next_service.order_link }}">Order of Service</a></p>
-      </div>
+      {% include 'about.html' %}
     </section>
 
     <section>
-      <h2>Upcoming Events</h2>
-      {% for event in collections.events %}
-      <div>
-        <h3>{{ event.data.name }}</h3>
-        <p>Date: {{ event.data.date }}</p>
-        <p>Time: {{ event.data.start_time }} - {{ event.data.end_time }}</p>
-        <p>{{ event.data.description }}</p>
-        <img src="{{ event.data.image }}" alt="{{ event.data.name }}" />
-      </div>
-      {% endfor %}
+      {% include 'service.html' %}
+    </section>
+
+    <section>
+      {% include 'events.html' %}
     </section>
   </body>
 </html>

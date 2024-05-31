@@ -1,0 +1,12 @@
+<section>
+  <h2>Next Service</h2>
+  {% for service in collections.service %}
+      <div>
+        <h3>Name: {{ service.data.name }}</h3>
+        <p>Date: {{ service.data.date }}</p>
+        <p>Start Time: {{ service.data.start_time }}</p>
+        <p><a href="{{ service.data.music_link }}">Music</a></p>
+        <p><a href="{{ service.data.order_link }}">Order of Service</a></p>
+      </div>
+      {% endfor %}
+</section>

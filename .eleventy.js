@@ -2,7 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('admin');
 
   eleventyConfig.addCollection('events', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('src/events/*.md');
+    return collectionApi.getFilteredByGlob('src/**/events/*.md');
   });
 
   eleventyConfig.addCollection('ministries', function (collectionApi) {
@@ -11,6 +11,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection('about', function (collectionApi) {
     return collectionApi.getFilteredByGlob('src/**/about/*.md');
+  });
+
+  eleventyConfig.addCollection('service', function (collectionApi) {
+    return collectionApi.getFilteredByGlob('src/**/service/*.md');
   });
 
   return {
