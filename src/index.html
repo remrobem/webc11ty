@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Events Website</title>
   </head>
   <body>
@@ -27,5 +28,17 @@
     <section>
       {% include 'events.html' %}
     </section>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
