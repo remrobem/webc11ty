@@ -1,5 +1,8 @@
+const pluginWebc = require('@11ty/eleventy-plugin-webc');
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('admin');
+  eleventyConfig.addPlugin(pluginWebc);
 
   eleventyConfig.addCollection('events', function (collectionApi) {
     return collectionApi.getFilteredByGlob('src/**/events/*.md');
