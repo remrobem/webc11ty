@@ -1,11 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-      webc:keep
-    ></script>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Events Website</title>
   </head>
   <body>
@@ -32,16 +29,8 @@
       {% include 'events.html' %}
     </section>
     <site-footer></site-footer>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
-      }
-    </script>
-  </body>
+    
+  
+
+</body>
 </html>

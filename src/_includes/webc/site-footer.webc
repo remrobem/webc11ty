@@ -1,0 +1,17 @@
+<!-- site-footer.webc -->
+<footer>
+  <p>&copy; 2024 Church of the Epiphany</p>
+</footer>
+
+<style>
+  footer {
+    color: red;
+    background-color: black;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+  }
+
+  footer > p {
+    font-family: fantasy;
+  }
+</style>

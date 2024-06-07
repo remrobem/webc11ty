@@ -6,11 +6,11 @@
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
       webc:keep
     ></script>
-    <title>Events Website</title>
+    <title>WEBC Events Website</title>
   </head>
   <body>
     <header>
-      <div>This is the page</div>
+      <div>This is the WEBC page</div>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -20,17 +20,6 @@
       <h1>Welcome to Our Events Website</h1>
     </header>
 
-    <section>
-      {% include 'about.html' %}
-    </section>
-
-    <section>
-      {% include 'service.html' %}
-    </section>
-
-    <section>
-      {% include 'events.html' %}
-    </section>
     <site-footer></site-footer>
     <script>
       if (window.netlifyIdentity) {
