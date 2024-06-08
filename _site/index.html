@@ -2,97 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-      webc:keep
-    ></script>
-    <title>Events Website</title>
-  </head>
-  <body>
-    <header>
-      <div>This is the page</div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/ministries/">Ministries</a></li>
-        </ul>
-      </nav>
-      <h1>Welcome to Our Events Website</h1>
-    </header>
-
-    <section>
-      <section>
-  <h2>About Us</h2>
-  <p>
-     
-      <h1>This is the description</h1> 
-      <h1>H1</h1>
-<h2>h﻿2</h2>
-<h3>h﻿3</h3>
-<ul>
-<li>t﻿his is plain text</li>
-<li><strong>t﻿his is bold</strong></li>
-<li><em>t﻿his is italics</em></li>
-</ul>
- 
-    
-  </p>
-  <p>aaa</p>
-  <p></p>
-</section>
-
-    </section>
-
-    <section>
-      <section>
-  <h2>Next Service</h2>
-  
-      <div>
-        <h3>Name: Sunday Service</h3>
-        <p>Date: 2024-06-01T10:00:00</p>
-        <p>Start Time: 10:00</p>
-        <p><a href="https://link-to-music.com">Music</a></p>
-        <p><a href="https://link-to-order-of-service.com">Order of Service</a></p>
-      </div>
-      
-</section>
-
-    </section>
-
-    <section>
-      <section>
-  <h2>Upcoming Events</h2>
-  
-  <div>
-    <h3>Sample Event</h3>
-    <p>Date: 2024-05-30T18:00:00</p>
-    <p>Time: 18:00 - 20:00</p>
-    <p>This is a long description of the sample event.</p>
-    <img src="/images/uploads/event1.jpg" alt="Sample Event" />
-  </div>
-  
-  <div>
-    <h3>Sample Event 2</h3>
-    <p>Date: 2024-05-30T18:00:00</p>
-    <p>Time: 18:00 - 20:00</p>
-    <p>This is a long description of the sample event.</p>
-    <img src="/images/uploads/event1.jpg" alt="Sample Event 2" />
-  </div>
-  
-</section>
-
-    </section>
-    <site-footer></site-footer>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="11ty uding WebC" />
+    <title>11ty with WebC</title>
+    <style>
+      .wi89bklsd h1{background-color:rgb(152,234,160);color:rgb(3,3,3)}.wi89bklsd h2{background-color:rgb(14,237,63);color:rgb(71,6,236)}
+.wuvqxloa4 button{color:blue;font-size:150%}
+.footer .footer{background-color:red;color:gray}
+    </style>
+    <script type="module">
+      window.customElements.define(
+    // vv
+    'my-counter', // component name
+    class extends HTMLElement {
+      connectedCallback() {
+        let btn = this.querySelector('button');
+        btn.addEventListener('click', () => {
+          btn.innerText = parseInt(btn.innerText) + 1;
         });
       }
+    }
+  );
     </script>
+  </head>
+  <body>
+    <site-header class="wi89bklsd"><h1>This is the header</h1>
+<h2>header 2</h2>
+
+
+</site-header>
+<my-counter class="wuvqxloa4"><button type="button" id="webc-7QPEX">1</button>
+
+
+
+
+</my-counter>
+<my-counter class="wuvqxloa4"><button type="button" id="webc-6bSZO">1</button>
+
+
+
+
+</my-counter>
+<my-counter class="wuvqxloa4"><button type="button" id="webc--fvs3">1</button>
+
+
+
+
+</my-counter>
+<my-counter class="wuvqxloa4"><button type="button" id="webc-74BkF">1</button>
+
+
+
+
+</my-counter>
+<site-footer class="footer"><div class="footer">
+  © 2024 Church of the Epiphany
+</div>
+
+
+</site-footer>
   </body>
 </html>

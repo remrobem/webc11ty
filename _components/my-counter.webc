@@ -1,0 +1,23 @@
+<button type="button" :id="uid">1</button>
+
+<style webc:scoped>
+  :host button {
+    color: blue;
+    font-size: 150%;
+  }
+</style>
+
+<script>
+  window.customElements.define(
+    // vv
+    'my-counter', // component name
+    class extends HTMLElement {
+      connectedCallback() {
+        let btn = this.querySelector('button');
+        btn.addEventListener('click', () => {
+          btn.innerText = parseInt(btn.innerText) + 1;
+        });
+      }
+    }
+  );
+</script>

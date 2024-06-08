@@ -1,0 +1,8 @@
+&copy 2024 Church of the Epiphany
+
+<style webc:scoped>
+  :host {
+    background-color: red;
+    color: gray;
+  }
+</style>

@@ -1,0 +1,10 @@
+<div class="footer">
+  &copy 2024 Church of the Epiphany
+</div>
+
+<style webc:scoped="footer">
+  :host .footer {
+    background-color: red;
+    color: gray;
+  }
+</style>

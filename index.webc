@@ -1,0 +1,10 @@
+---
+layout: layout.html
+---
+
+<site-header></site-header>
+<my-counter></my-counter>
+<my-counter></my-counter>
+<my-counter></my-counter>
+<my-counter></my-counter>
+<site-footer></site-footer>
