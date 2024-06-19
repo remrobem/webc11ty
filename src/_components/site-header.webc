@@ -1,0 +1,14 @@
+<h1 @html="title1"></h1>
+<h2 @html="title2"></h2>
+
+<style webc:scoped>
+  :host h1 {
+    background-color: rgb(152, 234, 160);
+    color: rgb(3, 3, 3);
+  }
+
+  :host h2 {
+    background-color: rgb(14, 237, 63);
+    color: rgb(71, 6, 236);
+  }
+</style>
