@@ -2,9 +2,11 @@
 layout: layout.html
 ---
 
-<site-header></site-header>
+<site-header title1="This is title 1" title2="This is title 2"></site-header>
+<site-nav></site-nav>
 <my-counter></my-counter>
 <my-counter></my-counter>
 <my-counter></my-counter>
 <my-counter></my-counter>
 <site-footer></site-footer>
+

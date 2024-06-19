@@ -1,5 +1,5 @@
-<h1 @html="title1"></h1>
-<h2 @html="title2"></h2>
+<h1 @html="title1" webc:nokeep></h1>
+<h2 @html="title2" webc:nokeep></h2>
 
 <style webc:scoped>
   :host h1 {
@@ -8,7 +8,7 @@
   }
 
   :host h2 {
-    background-color: rgb(14, 237, 63);
+    background-color: rgb(227, 77, 39);
     color: rgb(71, 6, 236);
   }
 </style>
