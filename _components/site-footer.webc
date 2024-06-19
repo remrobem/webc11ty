@@ -2,7 +2,7 @@
   &copy 2024 Church of the Epiphany
 </div>
 
-<style webc:scoped="footer">
+<style webc:scoped>
   :host .footer {
     background-color: red;
     color: gray;
